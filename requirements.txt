@@ -1,0 +1,9 @@
+streamlit>=1.28 # Use a recent version
+pandas>=1.5,<2.2 # Pin pandas version for stability with GeoPandas
+numpy
+geopandas>=0.12 # Requires specific versions of dependencies below
+shapely>=2.0 # GeoPandas 0.13+ requires Shapely 2.0+
+fiona # Needed by GeoPandas for file I/O (reading shapefiles)
+pyproj # Needed by GeoPandas for CRS handling
+scikit-learn>=1.1 # For KMeans, StandardScaler, SimpleImputer
+pysal>=2.7 # For spopt (SKATER) and libpysal (weights)
